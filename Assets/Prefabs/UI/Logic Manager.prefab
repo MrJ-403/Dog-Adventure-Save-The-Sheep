@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6959179931888532003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3866668176143247313}
+  - component: {fileID: 4680912047518721451}
+  m_Layer: 2
+  m_Name: Logic Manager
+  m_TagString: Logic
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3866668176143247313
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6959179931888532003}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.25047, y: -4.7467184, z: -3.2982397}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4680912047518721451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6959179931888532003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 445407da8d16fe1418aa755648466563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  directory: 
+  timeScale: 1
+  currentLevel: 1
+  timeSeconds: 0
+  startTime: 0
+  playerScore: 0
+  playerHealth: 100
+  isPaused: 0
+  isMuted: 0
+  isSongMuted: 0
+  HideMobileUI: 1
+  escape: {fileID: -4077358175230339354, guid: a1dcaf800158c1f4680a9f4b8a42ec7e, type: 3}
+  tab: {fileID: 7186876738552851699, guid: a1dcaf800158c1f4680a9f4b8a42ec7e, type: 3}
+  left: {fileID: -4216413714728436521, guid: a1dcaf800158c1f4680a9f4b8a42ec7e, type: 3}
+  right: {fileID: 6433597605583362100, guid: a1dcaf800158c1f4680a9f4b8a42ec7e, type: 3}
+  shift: {fileID: 4102305676157996706, guid: a1dcaf800158c1f4680a9f4b8a42ec7e, type: 3}
+  space: {fileID: -6884276624827318017, guid: a1dcaf800158c1f4680a9f4b8a42ec7e, type: 3}
+  interact: {fileID: 3567914002939196689, guid: a1dcaf800158c1f4680a9f4b8a42ec7e, type: 3}
+  audioMixer: {fileID: 24100000, guid: 2fc361cd91c05174093ba54ec2e752af, type: 2}
+  playerMovements: {fileID: 0}
+  scoreText: {fileID: 0}
+  healthText: {fileID: 0}
+  timeText: {fileID: 0}
+  pauseMenu: {fileID: 0}
+  gameOver: {fileID: 0}
+  winMenu: {fileID: 0}
+  miniMap: {fileID: 0}
+  player: {fileID: 0}
+  clip: {fileID: 8300000, guid: 8a4119965a43ea54e8be8532cb15fc39, type: 3}
+  shield: {fileID: 0}
+  mobileUI: {fileID: 0}
+  creditsMenu: {fileID: 6571871645675462565, guid: 3177212020615884e9a088c3c797402d, type: 3}

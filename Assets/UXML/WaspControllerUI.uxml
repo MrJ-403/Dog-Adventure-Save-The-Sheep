@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="Vars" style="flex-grow: 1; border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; border-bottom-left-radius: 6px; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-left-color: rgb(49, 49, 49); border-right-color: rgb(49, 49, 49); border-top-color: rgb(49, 49, 49); border-bottom-color: rgb(49, 49, 49);">
+        <uie:PropertyField name="Animator" binding-path="animator" label="Animator" />
+        <uie:PropertyField name="Rigidbody2D" binding-path="rb" label="Rigidbody2D" />
+        <ui:FloatField label="Speed" value="5" binding-path="speed" tooltip="Move Speed" name="Speed" />
+        <ui:FloatField label="See Range" value="10" name="Range" readonly="false" binding-path="range" />
+        <uie:PropertyField binding-path="layerMask" label="Player Layer" name="PlayerLayer" />
+        <ui:FloatField label="Shot Timer" value="0" binding-path="shotTimer" readonly="true" />
+        <ui:FloatField label="Shot Rate" value="1" binding-path="shotRate" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Controls" style="flex-grow: 1; border-left-color: rgb(49, 49, 49); border-right-color: rgb(49, 49, 49); border-top-color: rgb(49, 49, 49); border-bottom-color: rgb(49, 49, 49); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; border-bottom-left-radius: 6px;">
+        <ui:Label tabindex="-1" text="Navigation Controls" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font: url(&quot;project://database/Library/unity%20default%20resources?fileID=10102&amp;guid=0000000000000000e000000000000000&amp;type=0#LegacyRuntime&quot;); -unity-font-style: bold; font-size: 21px; -unity-text-align: middle-center; white-space: normal; text-overflow: ellipsis; letter-spacing: 0; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; border-left-color: rgba(42, 42, 42, 0.46); border-right-color: rgba(42, 42, 42, 0.46); border-top-color: rgba(42, 42, 42, 0.46); border-bottom-color: rgba(42, 42, 42, 0.46);" />
+        <ui:DropdownField label="Towards" name="Towards" choices="Right,Left,Up,Down" index="0" binding-path="startDirection" usage-hints="DynamicTransform" tooltip="Choos according to the Direction" style="height: auto; overflow: hidden; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; align-self: stretch; flex-grow: 0; display: flex; visibility: visible; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+        <ui:DropdownField label="Direction" name="Direction" choices="Horizontal, Vertical" index="0" binding-path="moveDirection" style="height: auto; overflow: hidden; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center; align-self: stretch; flex-grow: 0; display: flex; visibility: visible; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+        <ui:FloatField label="Distance" value="5" binding-path="distance" tooltip="Travel Distance" name="Distance" />
+        <uie:PropertyField label="Parent" binding-path="parent" />
+    </ui:VisualElement>
+</ui:UXML>
